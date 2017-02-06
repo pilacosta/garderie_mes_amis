@@ -106,6 +106,9 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
  */
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
+	//la font google pour
+	wp_enqueue_style( 'Quicksand-googlefonts', esc_url_raw("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"));
+
 
 	wp_enqueue_script( 'underscores-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

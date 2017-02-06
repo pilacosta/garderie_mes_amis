@@ -9,8 +9,10 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('col-9'); ?>><!--'col-6'-->
 	<header class="entry-header">
+
+
 		<?php
 		if ( is_single() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -27,6 +29,14 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
+
+<!--      cod_a moi  -->
+        <?php if (has_post_thumbnail()) { ?>
+            <p> <?php the_post_thumbnail('thumbnail');?></p>
+        <?php } ?>
+
+        <!--      cod_a moi  -->
+
 		<?php
 			the_content( sprintf(
 				/* translators: %s: Name of current post. */

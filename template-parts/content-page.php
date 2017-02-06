@@ -10,11 +10,23 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
+	<header class="entry-header col-9">
+
+
+
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
+	<div class="entry-content"><!--conteneur main pages-->
+
+        <!--      cod_a moi  -->
+        <?php if (has_post_thumbnail()) { ?>
+            <p> <?php the_post_thumbnail('thumbnail');?></p>
+        <?php } ?>
+
+        <!--      cod_a moi  -->
+
+
 		<?php
 			the_content();
 
@@ -26,7 +38,7 @@
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>
-		<footer class="entry-footer">
+		<footer class="entry-footer col-9">
 			<?php
 				edit_post_link(
 					sprintf(
