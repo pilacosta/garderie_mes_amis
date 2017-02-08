@@ -10,7 +10,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header col-9">
+	<header class="entry-header">
 
 
 
@@ -18,6 +18,8 @@
 	</header><!-- .entry-header -->
 
 	<div class="entry-content"><!--conteneur main pages-->
+
+
 
         <!--      cod_a moi  -->
         <?php if (has_post_thumbnail()) { ?>
@@ -35,6 +37,8 @@
 				'after'  => '</div>',
 			) );
 		?>
+
+
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

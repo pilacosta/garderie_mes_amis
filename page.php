@@ -14,7 +14,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area col-9">
+	<div id="primary" class="content-area col-9"><!--tous les pages pilar-->
+
 		<main id="main" class="site-main" role="main">
 
 			<?php

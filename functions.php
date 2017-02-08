@@ -45,6 +45,7 @@ function underscores_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'underscores' ),
+		'menu-2' => esc_html__( 'menu2', 'underscores' ),/*un segundo menu*/
 	) );
 
 	/*
@@ -106,7 +107,9 @@ add_action( 'widgets_init', 'underscores_widgets_init' );
  */
 function underscores_scripts() {
 	wp_enqueue_style( 'underscores-style', get_stylesheet_uri() );
-	//la font google pour
+
+
+	//google font _pilar
 	wp_enqueue_style( 'Quicksand-googlefonts', esc_url_raw("https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700"));
 
 

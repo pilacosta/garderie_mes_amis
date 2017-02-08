@@ -58,7 +58,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 .col-6{width: 50%;}
 .col-7{width: 58.33%;}
 .col-8{width: 66.66%; }
-.col-9{width: 75%; background-color: #83c373}
+.col-9{width: 75%; }
 .col-10{width: 83.33%;}
 .col-11{width: 91.66%;}
 .col-12{width: 100%; background-color: #e5a7ff}
@@ -147,6 +147,7 @@ dfn {
 h1 {
 	font-size: 2em;
 	margin: 0.67em 0;
+	color: #1f6ba5;
 }
 
 mark {
@@ -298,8 +299,9 @@ button,
 input,
 select,
 textarea {
-	color: #404040;
-	font-family: sans-serif;
+	color: #000;
+	font-family: 'Quicksand', sans-serif;
+	/*font-family: sans-serif;*/
 	font-size: 16px;
 	font-size: 1rem;
 	line-height: 1.5;
@@ -314,6 +316,12 @@ h6 {
 	clear: both;
 }
 
+h2{
+	padding: 10px 0 10px 0;
+	margin: 0;
+	font-size: 1.3rem;
+	color: #1f6ba5;
+}
 p {
 	margin-bottom: 1.5em;
 }
@@ -539,17 +547,20 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: #b80118;/*pilar*/
+	text-decoration: none;
+	font-weight: 800;
+
 }
 
 a:visited {
-	color: purple;
+	/*color: #526faa;*/
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: midnightblue;
+	color: #149db8;
 }
 
 a:focus {
@@ -576,16 +587,23 @@ a:active {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
+
 }
 
 .main-navigation li {
 	float: left;
 	position: relative;
+    margin-right: 20px;/*cod_pilar*/
+
 }
 
 .main-navigation a {
 	display: block;
 	text-decoration: none;
+    color: red;/*cod_pilar*/
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+
 }
 
 .main-navigation ul ul {
@@ -600,6 +618,7 @@ a:active {
 .main-navigation ul ul ul {
 	left: -999em;
 	top: 0;
+
 }
 
 .main-navigation ul ul a {
@@ -928,15 +947,122 @@ object {
 }
 
 
-/*Debut css garderie*/
+/*pilar_acosta_ Debut css garderie*/
 
 #page{
-    width: 80%;
+    /*width: 80%;*/
+    width: 1000px;
     margin: 0 auto;
-    background-color: #999999;
+    /*min-width: 800px;*/
+    /*max-width: 1000px;*/
+    position: relative;
+
 }
 
 /*
 div#primary {
     width: 50%;
 }*/
+
+#Logo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 9999;
+    display: block;
+    width: 300px;
+    height: 289px;
+    background: url(images/logo_02.png) no-repeat 0 0;
+    text-indent: -9999px;
+
+}
+
+.menu-menu_01-container {
+    position: absolute;
+    top: 20px;
+    left: 750px;
+}
+
+.login_garderie{
+    background: url(images/login_02.png) no-repeat 0 0;
+    width: 165px;
+    /*height: 185px;*/
+	height: 200px;
+    float: left;
+	margin-left: 45px;
+	margin-top: -40px;
+}
+#form_login{
+	margin-top: 40px;
+	padding: 30px;
+}
+#form_login input{
+
+	width: 100px;
+
+}
+
+
+/*deuxieme menu*/
+.menu-menu_02-container ul li{
+	display: inline-block;
+	vertical-align: top;
+	font-family: 'Quicksand', sans-serif;
+
+	background-color: #ffe672;
+	padding: 10px;
+	font-size: 1.1rem;
+
+}
+.menu-menu_02-container ul li a{
+	text-decoration: none;
+	color: #1f3477;/*cod_pilar*/
+	/*font-family: 'Quicksand', sans-serif;*/
+	/*font-weight: 500;*/
+	background-color: #ffe672;
+	padding: 10px;
+	font-weight: 800;
+
+}
+
+#menu_02{
+
+}
+
+ul#menu-menu_02 {
+	margin: 0;
+	padding: 0;
+}
+
+/*lire la suite*/
+/*a.more-link {
+	color: red;
+	text-decoration: none;
+}*/
+
+.more-link a {
+	color: red;
+}
+.meta-nav span{
+	background-color: red;
+}
+
+.site-main{
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 0 10px 10px 10px;
+
+}
+
+/*aside secundary*/
+aside section ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+
+}
+
+aside#secondary {
+	background-color: #ffe672;
+	border-radius: 10px;
+}
