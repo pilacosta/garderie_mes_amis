@@ -99,8 +99,26 @@ function underscores_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+    /*deuxieme slidebar pilar*/
+
+    register_sidebar( array(
+        'name'          => esc_html__( 'Sidebar_02', 'underscores' ),
+        'id'            => 'sidebar-2',
+        'description'   => esc_html__( 'Add widgets here.', 'underscores' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '<h2 class="widget-title">',
+        'after_title'   => '</h2>',
+    ) );
 }
 add_action( 'widgets_init', 'underscores_widgets_init' );
+
+
+
+
+
+
 
 /**
  * Enqueue scripts and styles.

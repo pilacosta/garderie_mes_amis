@@ -18,6 +18,11 @@ get_header(); ?>
 		<main id="main" class="site-main col-9" role="main"> <!-- row-->
 
 
+            <!---->
+            <?php
+            if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('slide')) : endif;
+            ?>
+
 		<?php
 		if ( have_posts() ) :
 

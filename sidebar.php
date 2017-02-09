@@ -12,7 +12,19 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-    <div class="login_garderie">
+<!--creation deuxieme slidebar-->
+<?php
+if ( ! is_active_sidebar( 'sidebar-2' ) ) {
+    return;
+}
+?>
+
+<aside id="test" class="widget-area col-3" role="complementary">
+    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+
+</aside><!-- fin creation deuxieme slidebar -->
+
+    <!--<div class="login_garderie">
         <div id="form_login">
             <form name="login" method="post">
                 <input type="text" name="username" id="username" value="" />
@@ -22,13 +34,15 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
         </div>
 
-
-    </div>
+    </div>-->
 
     <aside id="secondary" class="widget-area col-3" role="complementary">
         <?php dynamic_sidebar( 'sidebar-1' ); ?>
 
     </aside><!-- #secondary -->
+
+
+
 
 
 

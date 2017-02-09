@@ -32,7 +32,7 @@
         <img src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="" />
 
 
-        <a href="" id="Logo" class=""></a>
+        <a href="<?php home_url(); ?>" id="Logo" class=""></a>
 
                 <div class="site-branding">
                     <?php

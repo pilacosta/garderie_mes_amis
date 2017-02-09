@@ -9,9 +9,15 @@
 
 get_header(); ?>
 
+
+
 	<div id="primary" class="content-area col-9"><!--page commentaires pilar-->
 
+
+
 		<main id="main" class="site-main" role="main">
+
+
 
 		<?php
 		while ( have_posts() ) : the_post();

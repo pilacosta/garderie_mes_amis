@@ -190,6 +190,7 @@ figure {
 hr {
 	box-sizing: content-box;
 	height: 0;
+	margin-top: 50px;
 }
 
 pre {
@@ -316,14 +317,16 @@ h6 {
 	clear: both;
 }
 
-h2{
+h2 {
 	padding: 10px 0 10px 0;
 	margin: 0;
 	font-size: 1.3rem;
 	color: #1f6ba5;
 }
+
 p {
-	margin-bottom: 1.5em;
+	/*margin-bottom: 1.5em;*/
+margin-top: 0;
 }
 
 dfn,
@@ -550,6 +553,42 @@ a {
 	color: #b80118;/*pilar*/
 	text-decoration: none;
 	font-weight: 800;
+
+}
+
+/*titres articles*/
+h2 a {
+	color: #b80118;
+	font-weight: 200;
+	font-size: 2rem;
+}
+
+/*date articles*/
+span.posted-on{
+	color: #1d1d1d;/*pilar*/
+	font-size: 1rem;
+	font-weight: 500;
+
+}
+
+.entry-date {
+	color: #149db8;/*pilar*/
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+
+}
+span.byline{
+	color: #1d1d1d;/*pilar*/
+	font-size: 1rem;
+	font-weight: 500;
+
+}
+
+h2.entry-meta{
+
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -950,20 +989,11 @@ object {
 /*pilar_acosta_ Debut css garderie*/
 
 #page{
-    /*width: 80%;*/
     width: 1000px;
     margin: 0 auto;
-    /*min-width: 800px;*/
-    /*max-width: 1000px;*/
     position: relative;
 
 }
-
-/*
-div#primary {
-    width: 50%;
-}*/
-
 #Logo {
     position: absolute;
     top: 50px;
@@ -976,7 +1006,6 @@ div#primary {
     text-indent: -9999px;
 
 }
-
 .menu-menu_01-container {
     position: absolute;
     top: 20px;
@@ -986,7 +1015,6 @@ div#primary {
 .login_garderie{
     background: url(images/login_02.png) no-repeat 0 0;
     width: 165px;
-    /*height: 185px;*/
 	height: 200px;
     float: left;
 	margin-left: 45px;
@@ -999,34 +1027,31 @@ div#primary {
 #form_login input{
 
 	width: 100px;
-
 }
-
 
 /*deuxieme menu*/
 .menu-menu_02-container ul li{
 	display: inline-block;
 	vertical-align: top;
 	font-family: 'Quicksand', sans-serif;
-
 	background-color: #ffe672;
 	padding: 10px;
 	font-size: 1.1rem;
-
+	border-radius: 10px 10px 0 0;
 }
+
+.menu-menu_02-container ul li:hover{
+	background-color: #ffca60;
+}
+
 .menu-menu_02-container ul li a{
 	text-decoration: none;
 	color: #1f3477;/*cod_pilar*/
-	/*font-family: 'Quicksand', sans-serif;*/
-	/*font-weight: 500;*/
-	background-color: #ffe672;
 	padding: 10px;
 	font-weight: 800;
-
 }
-
-#menu_02{
-
+.menu-menu_02-container ul li a:hover{
+	background-color:#ffca60;
 }
 
 ul#menu-menu_02 {
@@ -1034,24 +1059,24 @@ ul#menu-menu_02 {
 	padding: 0;
 }
 
-/*lire la suite*/
-/*a.more-link {
-	color: red;
-	text-decoration: none;
-}*/
-
 .more-link a {
 	color: red;
 }
 .meta-nav span{
 	background-color: red;
 }
-
+/*background articles*/
 .site-main{
 	background-color: #fff;
-	padding: 20px;
+	padding: 0 20px 0 20px;
 	border-radius: 0 10px 10px 10px;
 
+}
+
+/*background pages*/
+div#primary {
+	background-color: #fff;
+	border-radius: 0 10px 10px 10px;
 }
 
 /*aside secundary*/
@@ -1059,10 +1084,58 @@ aside section ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-
 }
-
 aside#secondary {
 	background-color: #ffe672;
 	border-radius: 10px;
+}
+.entry-content{
+	margin: 0;
+	border-bottom: solid #e0e0e0  1px;
+	margin-bottom: 5px;
+}
+
+/*espace entre seccions posted in en footer des articles*/
+.entry-footer span{
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: solid #999 1px;
+}
+
+/*credit de footer*/
+#colophon{
+	text-align: center;
+}
+
+#pagination{
+	text-align: right;
+}
+#pagination a{
+	margin-top: 10px;
+	text-align: right;
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: solid #999 1px;
+	font-size: 0.8rem;
+}
+/*images intallations*/
+img.alignnone {
+	margin: 0 10px 10px 10px;
+}
+
+/*margin de mot modifier dans pages*/
+footer.entry-footer.col-9 {
+	margin: 20px 0 20px 0;
+}
+footer.site-footer a{
+	color:#fff;
+}
+aside#test.widget-area {
+	background-color: #eeeeee;
+	border-radius: 10px;
+}
+/*la meteo*/
+div#awesome-weather-quebec {
+	border-radius: 10px;
+	margin: 15px 0 15px 0;
 }
